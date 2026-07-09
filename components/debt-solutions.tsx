@@ -1,16 +1,7 @@
 import {
-  Home,
-  Landmark,
-  Briefcase,
-  Wallet,
-  Factory,
-  HardHat,
-  Building2,
-  Layers,
-  Receipt,
-  RefreshCw,
-  Scale,
-  Coins,
+  Home, Landmark, Briefcase, Wallet, Factory, HardHat,
+  Building2, Layers, Receipt, RefreshCw, Scale, Coins,
+  ArrowUpRight,
 } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
@@ -32,8 +23,9 @@ const solutions = [
 
 export function DebtSolutions() {
   return (
-    <section id="debt" className="bg-secondary py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section id="debt" className="relative overflow-hidden bg-background py-24 lg:py-32">
+      <div className="absolute -left-20 top-1/3 aurora-blob h-72 w-72 bg-primary/8" />
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <Reveal>
           <SectionHeading
             eyebrow="Debt Solutions"
@@ -42,19 +34,28 @@ export function DebtSolutions() {
           />
         </Reveal>
 
-        <div className="mt-16 grid gap-px overflow-hidden rounded-sm border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {solutions.map((item, i) => (
             <Reveal as="article" key={item.title} delay={(i % 3) * 80}>
-              <div className="group h-full bg-card p-8 transition-colors duration-300 hover:bg-primary">
-                <div className="flex h-11 w-11 items-center justify-center rounded-sm bg-secondary text-primary transition-colors duration-300 group-hover:bg-accent group-hover:text-accent-foreground">
+              <div className="group relative h-full overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all duration-400 hover:border-accent/50 hover:shadow-[0_20px_50px_-25px_rgba(22,35,63,0.4)] hover-lift">
+                {/* Shine sweep on hover */}
+                <div className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+                <div className="relative flex h-12 w-12 items-center justify-center rounded-xl bg-secondary text-primary transition-all duration-400 group-hover:bg-accent group-hover:text-accent-foreground group-hover:scale-110">
                   <item.icon className="h-5 w-5" />
                 </div>
-                <h3 className="mt-6 font-serif text-lg font-semibold text-foreground transition-colors duration-300 group-hover:text-primary-foreground">
+                <h3 className="relative mt-6 font-serif text-lg font-semibold text-foreground">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground transition-colors duration-300 group-hover:text-primary-foreground/70">
+                <p className="relative mt-2 text-sm leading-relaxed text-muted-foreground">
                   {item.text}
                 </p>
+                <a
+                  href="#contact"
+                  className="relative mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-primary opacity-0 transition-all duration-300 group-hover:opacity-100"
+                >
+                  Enquire
+                  <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </a>
               </div>
             </Reveal>
           ))}

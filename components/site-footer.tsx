@@ -11,7 +11,7 @@ const columns = [
   },
   {
     title: 'Company',
-    links: ['About', 'Leadership', 'Core Strengths', 'Contact'],
+    links: ['About', 'Leadership', 'Core Strengths', 'EMI Calculator', 'Contact'],
   },
 ]
 

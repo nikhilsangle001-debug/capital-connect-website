@@ -9,8 +9,9 @@ const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Debt', href: '#debt' },
   { label: 'Equity', href: '#equity' },
+  { label: 'EMI Calculator', href: '#calculator' },
+  { label: 'Process', href: '#process' },
   { label: 'Leadership', href: '#leadership' },
-  { label: 'Strengths', href: '#strengths' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -81,7 +82,7 @@ export function SiteHeader() {
       <div
         className={cn(
           'overflow-hidden bg-primary/98 backdrop-blur-md transition-[max-height] duration-500 lg:hidden',
-          open ? 'max-h-96' : 'max-h-0',
+          open ? 'max-h-[28rem]' : 'max-h-0',
         )}
       >
         <nav className="flex flex-col gap-1 px-6 pb-6 pt-2" aria-label="Mobile">
