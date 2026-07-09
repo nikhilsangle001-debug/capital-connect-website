@@ -1,4 +1,4 @@
-import { Rocket, TrendingUp, PieChart, Handshake, Users, Banknote, ArrowUpRight } from 'lucide-react'
+import { Rocket, TrendingUp, ChartPie as PieChart, Handshake, Users, Banknote, ArrowUpRight } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
 

@@ -1,8 +1,4 @@
-import {
-  Home, Landmark, Briefcase, Wallet, Factory, HardHat,
-  Building2, Layers, Receipt, RefreshCw, Scale, Coins,
-  ArrowUpRight,
-} from 'lucide-react'
+import { Hop as Home, Landmark, Briefcase, Wallet, Factory, HardHat, Building2, Layers, Receipt, RefreshCw, Scale, Coins, ArrowUpRight } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
 

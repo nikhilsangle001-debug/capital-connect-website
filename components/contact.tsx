@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, type FormEvent } from 'react'
-import { Phone, Mail, MapPin, MessageCircle, ArrowUpRight, CheckCircle2, Loader2 } from 'lucide-react'
+import { Phone, Mail, MapPin, MessageCircle, ArrowUpRight, CircleCheck as CheckCircle2, Loader as Loader2 } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
 import { SectionHeading } from '@/components/section-heading'
 import { supabase } from '@/lib/supabase'
