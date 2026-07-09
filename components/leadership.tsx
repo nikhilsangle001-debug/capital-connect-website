@@ -19,9 +19,9 @@ export function Leadership() {
           <Reveal>
             <div className="relative">
               <img
-                src="/images/sunil-poojari-portrait.png"
+                src="/images/sunil-original.png"
                 alt="Sunil Poojari, Founder of Capital Connect"
-                className="aspect-[4/5] w-full rounded-sm object-cover"
+                className="aspect-[4/5] w-full rounded-sm object-cover object-[center_35%]"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/90 to-transparent p-8">
                 <p className="font-serif text-2xl font-semibold text-primary-foreground">
